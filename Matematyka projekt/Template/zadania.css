@@ -1,0 +1,79 @@
+.difficulty-container {
+  position: relative;
+  padding-top: 3rem;
+} /*
+.difficulty-container::before { pomysł psół strone
+  content: "Wybór trudności";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: #0ff;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #08c;
+  letter-spacing: 2px;
+} */
+.difficulty-btn {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid #343434;
+  background: transparent;
+  color: #343434;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.difficulty-btn:hover {
+  background: rgba(0, 255, 255, 0.1);
+  color: #0ff;
+  box-shadow: 0 0 8px #0ff;
+}
+.correct {
+  border: 2px solid #0f0 !important;
+  box-shadow: 0 0 8px #0f0 !important;
+  background: rgba(0, 255, 0, 0.1);
+}
+.wrong {
+  border: 2px solid #f00 !important;
+  box-shadow: 0 0 8px #f00 !important;
+  background: rgba(255, 0, 0, 0.1);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-20px); }
+}
+#difficultyContainer.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+#quizContainer.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+.quiz-container {
+  display: none;
+}
+.quiz-container.visible {
+  display: block;
+}
+.control-btn {
+  margin: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border: 2px solid #343434;
+  background: transparent;
+  color: #343434;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.control-btn:hover {
+  background: rgba(52, 52, 52, 0.1);
+  color: #343434;
+}

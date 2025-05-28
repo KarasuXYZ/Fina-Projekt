@@ -1,0 +1,16 @@
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;             
+    background: linear-gradient( #9ee004,#afe708,#92da04);
+    animation: BackgroundAnimation 25s ease infinite;
+    background-size: 550% 550%;
+  }
+  @keyframes BackgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
