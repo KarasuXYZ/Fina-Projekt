@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="Template/conector.css">
+</head>
+<body>
+    <!-- <div id="loader" class="loader">Ładowanie...</div> Pomysł zawieszony -->
+     <div id="particles-js"> </div>
+         <header>
+           <!-- Logo i akutalny czas-->
+          <div class="logo"><a href="#">Logo <!-- zmienić logo na przycisk do zmiany motywu -->
+            <img src="#" alt="">
+              </a></div>
+
+              <div class="time">
+            <p id="time">Ładowanie czasu...</p>
+            </div>
+
+            <!-- Panel nawigacyjny-->
+           <ul>
+                <li><a href="Index.html"><span>Strona Główna</span><span>Strona Główna</span></a></li>
+                <li><a href="Zadania.html"><span>Zadania</span><span>Zadania</span></a></li>
+                <li><a href="Login.html"><span>Logowanie</span><span>Logowanie</span></a></li>
+                <li><a href="Galeria.html"><span>Galeria Zdjęć</span><span>Galeria Zdjęć</span></a></li>
+                <li><a href="Ostronie.html"><span>O stronie</span><span>O stronie</span></a></li>
+            </ul>
+
+        </header>
+
+        <main>
+
+            <div class="gallery">
+                <button class="arrow left" onclick="changeImage(-1)">&#9664;</button>
+                <img id="galleryImage" src="https://pbs.twimg.com/media/FERfZ-kXsAIQUe1.jpg" alt="Galeria zdjęć">
+                <button class="arrow right" onclick="changeImage(1)">&#9654;</button>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <p>Autor Sebastian Kramarz &copy;</p>
+        </footer>
+     
+    <!-- Dodawanie  skryptów-->
+     <!-- Skeypt odpowiadający za pkazanie czasu-->
+    <script src="Template/time.js"></script>
+    <!-- Dodanie bibioteki Particles JS i nadanie wortości naszym particlesą-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="Template/Particles.js"></script> 
+    <!-- Dodanie ekranu ładowania
+     <script src="Template/Loader.js"></script> pomysł wstrzymany -->
+     <script src="Template/Galeria.js"></script>
+</body>
+</html>

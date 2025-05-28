@@ -1,0 +1,50 @@
+.Pen-bt {
+    position: relative;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #343434;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease;
+    margin-top: 2%;
+    border: none;
+}
+.Pen-bt::before,
+.Pen-bt::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+.Pen-bt::before {
+    width: 2%;
+    left: 50%;
+    background: #e95c1a;
+}
+.Pen-bt::after {
+    width: 2%;
+    right: 50%;
+    background: #0a7edd;
+}
+.Pen-bt:hover::before,
+.Pen-bt:hover::after {
+    width: 5%;
+    height: 4px;
+    transition: 0.3 ease;
+}
+.Pen-bt:hover {
+    transform: scale(1.05) translateY(-5px);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #4caf50;
+}
+/* Skończyły mi się pomysły jak mogę zrobić tak żeby before i after przez siebie przechodziły, jakieś zacmienie mam dziś */
+.Pen-bt::before {
+  transform-origin: left center;
+}
+.Pen-bt::after {
+  transform-origin: right center;
+}
